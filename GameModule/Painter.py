@@ -10,6 +10,10 @@ class Painter:
     self.objects = objects
     self.state = state
     self.paused = False
+    if self.paused != False:
+      raise ValueError('El juego ha sido pausado')
+    #else:
+     # raise ValueError('Todo es correcto')
 
   def draw(self):
     if self.objects.background() != None:
