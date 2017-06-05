@@ -1,12 +1,10 @@
 import unittest
-from Arkanoid import Game
+import sys
+from GameModule import Painter
 
 class GuiTestCase(unittest.TestCase):
-    """Prueba si el juego termino o no correctamente"""
 
-    def test_is_state_start(self):
-        game = Game()
-        self.failUnlessRaises(ValueError, game)
+"""Prueba si el reloj para refrescar la pantall fue inicializado correctamente"""
 
     def test_is_clock_enable(self):
         game = Game()

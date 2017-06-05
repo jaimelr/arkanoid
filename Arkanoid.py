@@ -25,9 +25,6 @@ class Game:
 
     self.actualState = states["START"]
 
-    if self.actualState != 0:
-        raise ValueError("Estado actual no actualizado!")
-
     self.display = pygame.display.set_mode( gfx["screen"] )
     pygame.display.set_caption( "Arkanoid v" + version )
 
