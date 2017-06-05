@@ -5,7 +5,7 @@ import pygame
 class Ball(pygame.sprite.Sprite):
   def __init__(self):
     super(Ball,self).__init__()
-    # Definiujemy to jako listy z racji tego, że krotki są unmutable - wolę modyfikować aktualne obiekty niż tworzyć cały czas nowe...
+    
     self.position = [320,450]
     self.velocity = [0,0]
     self.w = 10
@@ -13,10 +13,10 @@ class Ball(pygame.sprite.Sprite):
 
 
     self.image = pygame.image.load( "Resources/ball/ball.png" ).convert_alpha()
-    self.rect = self.image.get_rect() 
+    self.rect = self.image.get_rect()
     self.rect.topleft = self.position
 
-  def reset(self):  
+  def reset(self):
     self.position = [320,450]
     self.velocity = [0,0]
 

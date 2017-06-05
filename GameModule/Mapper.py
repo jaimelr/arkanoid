@@ -30,5 +30,3 @@ class Mapper:
         return GhostBrick( gridx, gridy )
       elif name == "simple":
         return SimpleBrick( gridx, gridy )
-      elif name == "":
-        raise ValueError("No se ha definido ha definido el tipo de bloque")

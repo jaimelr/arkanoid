@@ -35,6 +35,8 @@ class Game:
     self.lastState = None
     self.fps = pygame.time.Clock()
 
+    print(self.fps)
+
     if self.fps == 0:
         raise ValueError("No se ha generado reloj para refrescar la pantalla.")
 
