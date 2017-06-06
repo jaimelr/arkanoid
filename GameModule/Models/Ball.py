@@ -5,14 +5,15 @@ import pygame
 class Ball(pygame.sprite.Sprite):
   def __init__(self):
     super(Ball,self).__init__()
-    
+
     self.position = [320,450]
     self.velocity = [0,0]
     self.w = 10
     self.h = 10
 
 
-    self.image = pygame.image.load( "Resources/ball/ball.png" ).convert_alpha()
+    self.img = pygame.image.load( "Resources/ball/ball.png" )
+    self.image = self.img.convert_alpha()
     self.rect = self.image.get_rect()
     self.rect.topleft = self.position
 

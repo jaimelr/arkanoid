@@ -19,9 +19,7 @@ class Brick( pygame.sprite.Sprite ):
     self.rect.topleft = ( self.realx, self.realy )
 
   def collision( self, obj ):
-    return pygame.sprite.collide_rect( self, obj )
+      return pygame.sprite.collide_rect( self, obj )
 
   def getType(self):
     return "brick"
-
-
